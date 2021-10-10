@@ -14,9 +14,14 @@ html {
 }
 
 body {
-  font-family: "Luckiest Guy", cursive;
-  background-color: #f1ff92;
+  font-family: "Galindo", cursive;
+  /*  background-color: #f1ff92;
+    background: rgb(229,238,51);
+    background: linear-gradient(0deg, rgba(229,238,51,1) 0%, rgba(255,245,223,1) 100%);
+  */
   padding: 0;
+  background-image: url(../img/fondo.jpg);
+  background-position: bottom center;
 }
 
 img {
@@ -24,11 +29,11 @@ img {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h1,
@@ -38,13 +43,13 @@ h3 {
 }
 
 /*********************/
-h2 {
-  margin-top: 20px;
+.titulo {
+  font-size: 35px;
 }
 
 .flex-contenedor {
-  margin-top: 30px;
-  font-size: 20px;
+  margin: 20px 0;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,10 +70,14 @@ h2 {
   margin-top: 8px;
   border-radius: 396px 401px 150px 201px / 150px 145px 150px 143px;
   border-style: groove;
+  border-color: #91534c;
   box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
   -webkit-box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
-  line-height: 30px;
+}
+
+.flex-contenedor .flex-hijo .iconos-comida {
+  width: 30px;
 }
 
 .flex-contenedor .flex-hijo:active {
@@ -77,5 +86,51 @@ h2 {
   box-shadow: -6px 19px 34px -5px black;
   -webkit-box-shadow: -6px 19px 34px -5px black;
   -moz-box-shadow: -6px 19px 34px -5px black;
+}
+
+section {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c4fa46;
+  max-width: 92%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+section h2 {
+  padding: 5px;
+  font-family: "Lobster", cursive;
+}
+
+section .cont-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+section .cont-info h4 {
+  font-family: "Lobster", cursive;
+}
+
+section .cont-info .insta {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+section .cont-info .insta .contInstagram {
+  font-size: 15px;
+  font-family: "Lobster", cursive;
+}
+
+img.imagenInsta {
+  width: 80px;
 }
 /*# sourceMappingURL=estilos.css.map */

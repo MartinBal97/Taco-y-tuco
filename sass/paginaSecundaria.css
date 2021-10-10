@@ -1,0 +1,229 @@
+/******Globales*******/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Galindo", cursive;
+  /*  background-color: #f1ff92;
+    background: rgb(229,238,51);
+    background: linear-gradient(0deg, rgba(229,238,51,1) 0%, rgba(255,245,223,1) 100%);
+  */
+  margin: 0 auto;
+  max-width: 92%;
+  background-image: url(../img/fondo.jpg);
+  background-position: bottom center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+/***********************/
+.imagen-flecha {
+  width: 45px;
+}
+
+.iconos-comida {
+  width: 30px;
+}
+
+header {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+header .contenedor-padre {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+main .tipoComida {
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+main .iconos-bandera {
+  width: 35px;
+}
+
+main .contenedorComidas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 7px 0;
+}
+
+main .contenedorComidas .platoEingredientes .nombrePlato {
+  font-family: "Arima Madurai", cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .contenedorComidas .platoEingredientes .nombrePlato .iconos-comida {
+  width: 30px;
+}
+
+main .contenedorComidas .platoEingredientes .contenidoIngredientes {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+main .contenedorComidas .platoEingredientes li.contenidoIngredientes {
+  margin-top: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}
+
+main .contenedorComidas .precios {
+  font-family: "Arima Madurai", cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .loMismoConVariantes .platoIngredientes2 .comidaPrecio .opcionDeLoMismo {
+  font-size: 18px;
+}
+
+main .loMismoConVariantes .platoIngredientes2 .comidaPrecio .opcionDeLoMismo2 {
+  font-family: "Arima Madurai", cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .loMismoConVariantes .platoIngredientes2 .comidaPrecio .contenedorTiposCarne {
+  font-family: "Arima Madurai", cursive;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .loMismoConVariantes .platoIngredientes2 .comidaPrecio .contenedorTiposCarne .precios2 {
+  font-size: 18px;
+}
+
+main .loMismoConVariantes .platoIngredientes2 .comidaPrecio .contenedorTiposCarne .precios2 .aclaracion {
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main .salsas {
+  border: 5px double #1C6EA4;
+  border-radius: 0px 40px 0px 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+main .salsas h3 {
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+main .tragos {
+  border: 5px dotted yellow;
+}
+
+main .tragos .precioTragos {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .contenedorPromo {
+  width: 98%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 3px double #a6af01;
+  border-radius: 15px;
+}
+
+main .contenedorPromo .nombrePromo {
+  margin: 9px;
+  font-family: "Galindo", cursive;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+main .contenedorPromo .contenidoPromo {
+  text-align: center;
+  font-family: "Arima Madurai", cursive;
+  font-weight: bold;
+  font-size: 18px;
+  max-width: 95%;
+}
+
+main .contenedorPromo .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .contenedorPromo .precioPromo {
+  margin: 8px;
+  padding: 5px 10px;
+  border: 4px inset orangered;
+  border-radius: 100px;
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+/*# sourceMappingURL=paginaSecundaria.css.map */

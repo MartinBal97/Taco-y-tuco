@@ -1,0 +1,242 @@
+$fuentePrincipal:'Galindo',
+cursive;
+$fuenteSecundaria: 'Lobster',
+cursive;
+$fuenteTerciaria:'Arima Madurai',
+cursive;
+
+@mixin contenedorPagSecundaria {
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+/******Globales*******/
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fuentePrincipal;
+    /*  background-color: #f1ff92;
+    background: rgb(229,238,51);
+    background: linear-gradient(0deg, rgba(229,238,51,1) 0%, rgba(255,245,223,1) 100%);
+  */
+    margin: 0 auto;
+    max-width: 92%;
+    background-image: url(../img/fondo.jpg);
+    background-position: bottom center;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+/***********************/
+.imagen-flecha {
+    width: 45px;
+}
+
+.iconos-comida {
+    width: 30px;
+
+}
+
+header {
+
+    @include contenedorPagSecundaria();
+
+    .contenedor-padre {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+}
+
+main {
+    @include contenedorPagSecundaria();
+    padding: 10px;
+    margin-top: 10px;
+
+    .tipoComida {
+        font-family: $fuenteSecundaria;
+        font-size: 25px;
+    }
+
+    .iconos-bandera {
+        width: 35px;
+    }
+
+    .contenedorComidas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 7px 0;
+
+        .platoEingredientes {
+
+            .nombrePlato {
+                font-family: $fuenteTerciaria;
+                font-size: 20px;
+                font-weight: bold;
+
+                .iconos-comida {
+                    width: 30px;
+                }
+            }
+
+            .contenidoIngredientes {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                font-size: 15px;
+
+            }
+
+            li.contenidoIngredientes {
+                margin-top: 5px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 16px;
+            }
+        }
+
+        .precios {
+            font-family: $fuenteTerciaria;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+    }
+
+    .loMismoConVariantes {
+        .platoIngredientes2 {
+            .comidaPrecio {
+
+                .opcionDeLoMismo {
+
+                    font-size: 18px;
+                }
+
+                .opcionDeLoMismo2 {
+                    font-family: $fuenteTerciaria;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .contenedorTiposCarne {
+                    font-family: $fuenteTerciaria;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .precios2 {
+                        font-size: 18px;
+
+                        .aclaracion {
+                            font-size: 15px;
+                            font-family: 'Courier New', Courier, monospace;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .salsas {
+        border: 5px double #1C6EA4;
+        border-radius: 0px 40px 0px 40px;
+        text-align: center;
+        padding: 10px;
+
+        h3 {
+            font-family: $fuenteSecundaria;
+            font-size: 25px;
+        }
+        
+    }
+
+    .tragos {
+        border: 5px dotted yellow;
+
+        .precioTragos {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    .contenedorPromo {
+
+        width: 98%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: 3px double rgb(166, 175, 1);
+        border-radius: 15px;
+
+        .nombrePromo {
+            margin: 9px;
+            font-family: $fuentePrincipal;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .contenidoPromo {
+            text-align: center;
+            font-family: $fuenteTerciaria;
+            font-weight: bold;
+            font-size: 18px;
+            max-width: 95%;
+
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .precioPromo {
+            margin: 8px;
+            padding: 5px 10px;
+            border: 4px inset orangered;
+            border-radius: 100px;
+
+
+
+            font: {
+                family: $fuenteSecundaria;
+                weight: bold;
+                size: 20px;
+            }
+        }
+    }
+
+}
