@@ -68,8 +68,9 @@ h3 {
   color: black;
   padding: 5px 10px;
   margin-top: 8px;
+  border: 5px;
   border-radius: 396px 401px 150px 201px / 150px 145px 150px 143px;
-  border-style: groove;
+  border-style: outset;
   border-color: #91534c;
   box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
   -webkit-box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
