@@ -53,6 +53,9 @@ h3 {
     font-size: 35px;
 }
 
+h1, .titulo2 {
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.53);
+}
 
 
 .flex-contenedor {
@@ -107,15 +110,15 @@ section {
 
     
     .cont-info {
-        
-        h4{
-            font-family: $fuenteSecundaria;
-        }
 
         display:flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        h4{
+            font-family: $fuenteSecundaria;
+        }
 
         .insta {
             
