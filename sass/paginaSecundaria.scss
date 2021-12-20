@@ -6,8 +6,7 @@ $fuenteTerciaria:'Arima Madurai',
 cursive;
 
 @mixin contenedorPagSecundaria {
-    background-color: white;
-    opacity: 0.9;
+    background-color:  rgba(255, 255, 255, 0.9);
     border-radius: 10px;
 }
 
@@ -59,7 +58,8 @@ h4 {
 }
 h5 {
     font-size:20px;
-    border-bottom: 2px solid black;
+    text-decoration: underline;
+    //border-bottom: 2px solid black;
     display: inline-block;
     font-family:  $fuenteSecundaria
 }
@@ -134,6 +134,23 @@ main {
             }
         }
 
+        .izquierda {
+            text-align: left !important;
+            width: 50%;
+            border-right: #ffe875 solid 2px;
+            border-bottom: #ffe875 solid 2px;;
+            margin-right: 2px;
+        }
+
+        .derecha {
+            text-align: right !important;
+            width: 50%;
+            border-left: #ffe875 solid 2px;
+            border-bottom: #ffe875 solid 2px;;
+            margin-left: 2px;
+        }
+        
+
         .precios {
             font-family: $fuenteTerciaria;
             font-size: 20px;
@@ -191,7 +208,7 @@ main {
     }
 
     .tragos {
-        border: 5px dotted yellow;
+        border: 5px dotted #ffe875;
 
         .precioTragos {
             font-size: 16px;
@@ -204,7 +221,7 @@ main {
         width: 98%;
         margin: 0 auto;
         margin-bottom: 20px;
-        border: 3px double rgb(166, 175, 1);
+        border: 3px double #ffe875;
         border-radius: 15px;
 
         .nombrePromo {

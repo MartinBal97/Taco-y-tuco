@@ -1,5 +1,7 @@
-$fuentePrincipal:'Galindo', cursive;
-$fuenteSecundaria: 'Lobster', cursive;
+$fuentePrincipal:'Galindo',
+cursive;
+$fuenteSecundaria: 'Lobster',
+cursive;
 
 /******Globales*******/
 html {
@@ -19,12 +21,12 @@ html {
 
 body {
     font-family: $fuentePrincipal;
-  /*  background-color: #f1ff92;
+    /*  background-color: #f1ff92;
     background: rgb(229,238,51);
     background: linear-gradient(0deg, rgba(229,238,51,1) 0%, rgba(255,245,223,1) 100%);
   */
     padding: 0;
-    background-image: url(../img/fondo.jpg) ;
+    background-image: url(../img/fondo.jpg);
     background-position: bottom center;
 }
 
@@ -49,19 +51,28 @@ h3 {
 
 
 /*********************/
-.titulo {
-    font-size: 35px;
+header {
+    .contTitulo {
+        display: flex;
+        justify-content: center;
+        
+        
+        .titulo {
+            background-color: rgba(255, 255, 255, 0.228);
+            border-radius: 20px;
+            padding: 10px 30px;
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+        }
+    }
 }
 
-h1, .titulo2 {
-    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.53);
-}
 
 
 .flex-contenedor {
     margin: 20px 0;
     font-size: 18px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,28 +89,26 @@ h1, .titulo2 {
         box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
         -webkit-box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
         -moz-box-shadow: 0px 26px 28px -3px rgba(0, 0, 0, 0.53);
-       
 
-        .iconos-comida{
-            width:30px;
-            
+        .iconos-comida {
+            width: 30px;
+
         }
     }
 
     .flex-hijo:active {
         transform: scale(0.85);
-        box-shadow: -6px 19px 34px -5px rgba(0,0,0,1);
-        -webkit-box-shadow: -6px 19px 34px -5px rgba(0,0,0,1);
-        -moz-box-shadow: -6px 19px 34px -5px rgba(0,0,0,1);
+        box-shadow: -6px 19px 34px -5px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: -6px 19px 34px -5px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -6px 19px 34px -5px rgba(0, 0, 0, 1);
     }
 }
 
 section {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(196, 250, 70);
-    max-width:92%;
+    max-width: 92%;
     margin: 0 auto;
-    
     border-radius: 20px;
     padding: 5px;
 
@@ -108,31 +117,30 @@ section {
         font-family: $fuenteSecundaria;
     }
 
-    
     .cont-info {
 
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
 
-        h4{
+        h4 {
             font-family: $fuenteSecundaria;
         }
 
         .insta {
-            
+
             flex: 40%;
-            .contInstagram{
+
+            .contInstagram {
                 font-size: 15px;
                 font-family: $fuenteSecundaria;
-                
+
             }
         }
-
     }
 }
 
 img.imagenInsta {
-    width: 80px; 
+    width: 80px;
 }

@@ -46,7 +46,7 @@ h4 {
 
 h5 {
   font-size: 20px;
-  border-bottom: 2px solid black;
+  text-decoration: underline;
   display: inline-block;
   font-family: "Lobster", cursive;
 }
@@ -61,8 +61,7 @@ h5 {
 }
 
 header {
-  background-color: white;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
 }
 
@@ -83,8 +82,7 @@ header .contenedor-padre {
 }
 
 main {
-  background-color: white;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
@@ -133,6 +131,22 @@ main .contenedorComidas .platoEingredientes li.contenidoIngredientes {
   margin-top: 5px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
+}
+
+main .contenedorComidas .izquierda {
+  text-align: left !important;
+  width: 50%;
+  border-right: #ffe875 solid 2px;
+  border-bottom: #ffe875 solid 2px;
+  margin-right: 2px;
+}
+
+main .contenedorComidas .derecha {
+  text-align: right !important;
+  width: 50%;
+  border-left: #ffe875 solid 2px;
+  border-bottom: #ffe875 solid 2px;
+  margin-left: 2px;
 }
 
 main .contenedorComidas .precios {
@@ -184,7 +198,7 @@ main .salsas h3 {
 }
 
 main .tragos {
-  border: 5px dotted yellow;
+  border: 5px dotted #ffe875;
 }
 
 main .tragos .precioTragos {
@@ -196,7 +210,7 @@ main .contenedorPromo {
   width: 98%;
   margin: 0 auto;
   margin-bottom: 20px;
-  border: 3px double #a6af01;
+  border: 3px double #ffe875;
   border-radius: 15px;
 }
 
